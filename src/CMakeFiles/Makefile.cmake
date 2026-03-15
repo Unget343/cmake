@@ -29,6 +29,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "app/CMakeLists.txt"
+  "config/CMakeLists.txt"
+  "config/config.hpp.in"
   "lib/CMakeLists.txt"
   "lib/my_lib/CMakeLists.txt"
   )
@@ -42,11 +45,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "configured_file/config.hpp"
+  "config/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/my_lib/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "app/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "lib/my_lib/CMakeFiles/Library.dir/DependInfo.cmake"
+  "app/CMakeFiles/Executable.dir/DependInfo.cmake"
   )

@@ -63,16 +63,52 @@ CMAKE_BINARY_DIR = /workspaces/thread-1/src
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: config/all
 all: lib/all
+all: app/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
+preinstall: config/preinstall
 preinstall: lib/preinstall
+preinstall: app/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: config/clean
 clean: lib/clean
+clean: app/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory app
+
+# Recursive "all" directory target.
+app/all: app/CMakeFiles/Executable.dir/all
+.PHONY : app/all
+
+# Recursive "preinstall" directory target.
+app/preinstall:
+.PHONY : app/preinstall
+
+# Recursive "clean" directory target.
+app/clean: app/CMakeFiles/Executable.dir/clean
+.PHONY : app/clean
+
+#=============================================================================
+# Directory level rules for directory config
+
+# Recursive "all" directory target.
+config/all:
+.PHONY : config/all
+
+# Recursive "preinstall" directory target.
+config/preinstall:
+.PHONY : config/preinstall
+
+# Recursive "clean" directory target.
+config/clean:
+.PHONY : config/clean
 
 #=============================================================================
 # Directory level rules for directory lib
@@ -111,7 +147,7 @@ lib/my_lib/clean: lib/my_lib/CMakeFiles/Library.dir/clean
 lib/my_lib/CMakeFiles/Library.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/my_lib/CMakeFiles/Library.dir/build.make lib/my_lib/CMakeFiles/Library.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/my_lib/CMakeFiles/Library.dir/build.make lib/my_lib/CMakeFiles/Library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/thread-1/src/CMakeFiles --progress-num=1,2 "Built target Library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/thread-1/src/CMakeFiles --progress-num=3,4 "Built target Library"
 .PHONY : lib/my_lib/CMakeFiles/Library.dir/all
 
 # Build rule for subdir invocation for target.
@@ -129,6 +165,32 @@ Library: lib/my_lib/CMakeFiles/Library.dir/rule
 lib/my_lib/CMakeFiles/Library.dir/clean:
 	$(MAKE) $(MAKESILENT) -f lib/my_lib/CMakeFiles/Library.dir/build.make lib/my_lib/CMakeFiles/Library.dir/clean
 .PHONY : lib/my_lib/CMakeFiles/Library.dir/clean
+
+#=============================================================================
+# Target rules for target app/CMakeFiles/Executable.dir
+
+# All Build rule for target.
+app/CMakeFiles/Executable.dir/all: lib/my_lib/CMakeFiles/Library.dir/all
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/depend
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/thread-1/src/CMakeFiles --progress-num=1,2 "Built target Executable"
+.PHONY : app/CMakeFiles/Executable.dir/all
+
+# Build rule for subdir invocation for target.
+app/CMakeFiles/Executable.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/thread-1/src/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/Executable.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/thread-1/src/CMakeFiles 0
+.PHONY : app/CMakeFiles/Executable.dir/rule
+
+# Convenience name for target.
+Executable: app/CMakeFiles/Executable.dir/rule
+.PHONY : Executable
+
+# clean rule for target.
+app/CMakeFiles/Executable.dir/clean:
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/clean
+.PHONY : app/CMakeFiles/Executable.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

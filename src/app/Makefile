@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/thread-1/src/CMakeFiles /workspaces/thread-1/src//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /workspaces/thread-1/src && $(CMAKE_COMMAND) -E cmake_progress_start /workspaces/thread-1/src/CMakeFiles /workspaces/thread-1/src/app//CMakeFiles/progress.marks
+	cd /workspaces/thread-1/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/thread-1/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /workspaces/thread-1/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,44 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /workspaces/thread-1/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /workspaces/thread-1/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspaces/thread-1/src && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Library
+# Convenience name for target.
+app/CMakeFiles/Executable.dir/rule:
+	cd /workspaces/thread-1/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/Executable.dir/rule
+.PHONY : app/CMakeFiles/Executable.dir/rule
 
-# Build rule for target.
-Library: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Library
-.PHONY : Library
-
-# fast build rule for target.
-Library/fast:
-	$(MAKE) $(MAKESILENT) -f lib/my_lib/CMakeFiles/Library.dir/build.make lib/my_lib/CMakeFiles/Library.dir/build
-.PHONY : Library/fast
-
-#=============================================================================
-# Target rules for targets named Executable
-
-# Build rule for target.
-Executable: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Executable
+# Convenience name for target.
+Executable: app/CMakeFiles/Executable.dir/rule
 .PHONY : Executable
 
 # fast build rule for target.
 Executable/fast:
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/build
+	cd /workspaces/thread-1/src && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/build
 .PHONY : Executable/fast
+
+main.o: main.cc.o
+.PHONY : main.o
+
+# target to build an object file
+main.cc.o:
+	cd /workspaces/thread-1/src && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/main.cc.o
+.PHONY : main.cc.o
+
+main.i: main.cc.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cc.i:
+	cd /workspaces/thread-1/src && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/main.cc.i
+.PHONY : main.cc.i
+
+main.s: main.cc.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cc.s:
+	cd /workspaces/thread-1/src && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:
@@ -151,7 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Executable"
-	@echo "... Library"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -163,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspaces/thread-1/src && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,7 +1,12 @@
 /workspaces/thread-1/src/CMakeFiles/edit_cache.dir
 /workspaces/thread-1/src/CMakeFiles/rebuild_cache.dir
+/workspaces/thread-1/src/config/CMakeFiles/edit_cache.dir
+/workspaces/thread-1/src/config/CMakeFiles/rebuild_cache.dir
 /workspaces/thread-1/src/lib/CMakeFiles/edit_cache.dir
 /workspaces/thread-1/src/lib/CMakeFiles/rebuild_cache.dir
 /workspaces/thread-1/src/lib/my_lib/CMakeFiles/Library.dir
 /workspaces/thread-1/src/lib/my_lib/CMakeFiles/edit_cache.dir
 /workspaces/thread-1/src/lib/my_lib/CMakeFiles/rebuild_cache.dir
+/workspaces/thread-1/src/app/CMakeFiles/Executable.dir
+/workspaces/thread-1/src/app/CMakeFiles/edit_cache.dir
+/workspaces/thread-1/src/app/CMakeFiles/rebuild_cache.dir

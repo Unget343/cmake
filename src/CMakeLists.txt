@@ -9,12 +9,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(EXECUTABLE_NAME Executable)
 set(LIBRARY_NAME Library)
 
-option(COMPILER_EXECUTABLE "Whether to compile the executable" OFF)
-
-
+add_subdirectory(config)
 add_subdirectory(lib)
-if (COMPILER_EXECUTABLE)
-    add_subdirectory(app)
-else()
-    message("W/o exe. compiling")
-endif()
+add_subdirectory(app)
