@@ -1,4 +1,7 @@
 #include <iostream>
+
+#include <nlohmann/json.hpp>
+
 #include "../lib/my_lib/my_lib.h"
 #include "../config/config.hpp.in"
 using namespace std;
