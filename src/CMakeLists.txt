@@ -9,7 +9,10 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(EXECUTABLE_NAME Executable)
 set(LIBRARY_NAME Library)
 
+option(ENABLE_TESTING "Enable a unit testing build" OFF)
+
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
+set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH}" ${CMAKE_MODULE_PATH})
 include(AddGitSubmodule)
 include(FetchContent)
 
@@ -53,3 +56,4 @@ add_subdirectory(external/json)
 add_subdirectory(config)
 add_subdirectory(lib)
 add_subdirectory(app)
+add_subdirectory(tests)

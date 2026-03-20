@@ -1,0 +1,3 @@
+/workspaces/thread-1/src/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate.dir
+/workspaces/thread-1/src/_deps/spdlog-subbuild/CMakeFiles/edit_cache.dir
+/workspaces/thread-1/src/_deps/spdlog-subbuild/CMakeFiles/rebuild_cache.dir

@@ -1060,3 +1060,230 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/fmt-src/support/cmake/cxx14.cmake:21 (check_cxx_compiler_flag)"
+      - "_deps/fmt-src/CMakeLists.txt:127 (include)"
+    checks:
+      - "Performing Test has_std_17_flag"
+    directories:
+      source: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-ukm7BC"
+      binary: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-ukm7BC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/thread-1/src/cmake/;/workspaces/thread-1/src/_deps/fmt-src/support/cmake"
+    buildResult:
+      variable: "has_std_17_flag"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-ukm7BC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_43d6f/fast
+        gmake[1]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-ukm7BC'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_43d6f.dir/build.make CMakeFiles/cmTC_43d6f.dir/build
+        gmake[2]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-ukm7BC'
+        Building CXX object CMakeFiles/cmTC_43d6f.dir/src.cxx.o
+        /usr/bin/c++ -Dhas_std_17_flag  -std=c++17   -std=c++17 -o CMakeFiles/cmTC_43d6f.dir/src.cxx.o -c /workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-ukm7BC/src.cxx
+        Linking CXX executable cmTC_43d6f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43d6f.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_43d6f.dir/src.cxx.o -o cmTC_43d6f 
+        gmake[2]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-ukm7BC'
+        gmake[1]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-ukm7BC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/fmt-src/support/cmake/cxx14.cmake:22 (check_cxx_compiler_flag)"
+      - "_deps/fmt-src/CMakeLists.txt:127 (include)"
+    checks:
+      - "Performing Test has_std_1z_flag"
+    directories:
+      source: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-66iiB1"
+      binary: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-66iiB1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/thread-1/src/cmake/;/workspaces/thread-1/src/_deps/fmt-src/support/cmake"
+    buildResult:
+      variable: "has_std_1z_flag"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-66iiB1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_110e7/fast
+        gmake[1]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-66iiB1'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_110e7.dir/build.make CMakeFiles/cmTC_110e7.dir/build
+        gmake[2]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-66iiB1'
+        Building CXX object CMakeFiles/cmTC_110e7.dir/src.cxx.o
+        /usr/bin/c++ -Dhas_std_1z_flag  -std=c++17   -std=c++1z -o CMakeFiles/cmTC_110e7.dir/src.cxx.o -c /workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-66iiB1/src.cxx
+        Linking CXX executable cmTC_110e7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_110e7.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_110e7.dir/src.cxx.o -o cmTC_110e7 
+        gmake[2]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-66iiB1'
+        gmake[1]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-66iiB1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "_deps/fmt-src/support/cmake/cxx14.cmake:52 (check_cxx_source_compiles)"
+      - "_deps/fmt-src/CMakeLists.txt:127 (include)"
+    checks:
+      - "Performing Test SUPPORTS_USER_DEFINED_LITERALS"
+    directories:
+      source: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-vys2iE"
+      binary: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-vys2iE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/thread-1/src/cmake/;/workspaces/thread-1/src/_deps/fmt-src/support/cmake"
+    buildResult:
+      variable: "SUPPORTS_USER_DEFINED_LITERALS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-vys2iE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_06697/fast
+        gmake[1]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-vys2iE'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_06697.dir/build.make CMakeFiles/cmTC_06697.dir/build
+        gmake[2]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-vys2iE'
+        Building CXX object CMakeFiles/cmTC_06697.dir/src.cxx.o
+        /usr/bin/c++ -DSUPPORTS_USER_DEFINED_LITERALS  -std=c++17 -std=c++17 -o CMakeFiles/cmTC_06697.dir/src.cxx.o -c /workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-vys2iE/src.cxx
+        Linking CXX executable cmTC_06697
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06697.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 CMakeFiles/cmTC_06697.dir/src.cxx.o -o cmTC_06697 
+        gmake[2]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-vys2iE'
+        gmake[1]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-vys2iE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "_deps/fmt-src/support/cmake/cxx14.cmake:62 (check_cxx_source_compiles)"
+      - "_deps/fmt-src/CMakeLists.txt:127 (include)"
+    checks:
+      - "Performing Test FMT_HAS_VARIANT"
+    directories:
+      source: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-PUoVLa"
+      binary: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-PUoVLa"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/thread-1/src/cmake/;/workspaces/thread-1/src/_deps/fmt-src/support/cmake"
+    buildResult:
+      variable: "FMT_HAS_VARIANT"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-PUoVLa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_84a2c/fast
+        gmake[1]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-PUoVLa'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_84a2c.dir/build.make CMakeFiles/cmTC_84a2c.dir/build
+        gmake[2]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-PUoVLa'
+        Building CXX object CMakeFiles/cmTC_84a2c.dir/src.cxx.o
+        /usr/bin/c++ -DFMT_HAS_VARIANT  -std=c++1z -std=c++17 -o CMakeFiles/cmTC_84a2c.dir/src.cxx.o -c /workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-PUoVLa/src.cxx
+        Linking CXX executable cmTC_84a2c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84a2c.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++1z CMakeFiles/cmTC_84a2c.dir/src.cxx.o -o cmTC_84a2c 
+        gmake[2]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-PUoVLa'
+        gmake[1]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-PUoVLa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "_deps/fmt-src/CMakeLists.txt:221 (check_symbol_exists)"
+    checks:
+      - "Looking for strtod_l"
+    directories:
+      source: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-7NgixS"
+      binary: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-7NgixS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/thread-1/src/cmake/;/workspaces/thread-1/src/_deps/fmt-src/support/cmake"
+    buildResult:
+      variable: "HAVE_STRTOD_L"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-7NgixS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1df32/fast
+        gmake[1]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-7NgixS'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1df32.dir/build.make CMakeFiles/cmTC_1df32.dir/build
+        gmake[2]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-7NgixS'
+        Building C object CMakeFiles/cmTC_1df32.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_1df32.dir/CheckSymbolExists.c.o -c /workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-7NgixS/CheckSymbolExists.c
+        /workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-7NgixS/CheckSymbolExists.c: In function ‘main’:
+        /workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-7NgixS/CheckSymbolExists.c:8:19: error: ‘strtod_l’ undeclared (first use in this function); did you mean ‘strtoull’?
+            8 |   return ((int*)(&strtod_l))[argc];
+              |                   ^~~~~~~~
+              |                   strtoull
+        /workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-7NgixS/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        gmake[2]: *** [CMakeFiles/cmTC_1df32.dir/build.make:78: CMakeFiles/cmTC_1df32.dir/CheckSymbolExists.c.o] Error 1
+        gmake[2]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-7NgixS'
+        gmake[1]: *** [Makefile:127: cmTC_1df32/fast] Error 2
+        gmake[1]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-7NgixS'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "_deps/spdlog-src/CMakeLists.txt:142 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-wDgplE"
+      binary: "/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-wDgplE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/thread-1/src/cmake/"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-wDgplE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b72be/fast
+        gmake[1]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-wDgplE'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b72be.dir/build.make CMakeFiles/cmTC_b72be.dir/build
+        gmake[2]: Entering directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-wDgplE'
+        Building C object CMakeFiles/cmTC_b72be.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b72be.dir/src.c.o -c /workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-wDgplE/src.c
+        Linking C executable cmTC_b72be
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b72be.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_b72be.dir/src.c.o -o cmTC_b72be 
+        gmake[2]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-wDgplE'
+        gmake[1]: Leaving directory '/workspaces/thread-1/src/CMakeFiles/CMakeScratch/TryCompile-wDgplE'
+        
+      exitCode: 0
+...
