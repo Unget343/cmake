@@ -10,11 +10,14 @@ set(EXECUTABLE_NAME Executable)
 set(LIBRARY_NAME Library)
 
 option(ENABLE_TESTING "Enable a unit testing build" OFF)
+option(ENABLE_WARNINGS "Enable compiler warnings" ON)
+option(WARNINGS_AS_ERRORS "Treat warnings as errors" ON)
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
-set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH}" ${CMAKE_MODULE_PATH})
 include(AddGitSubmodule)
 include(FetchContent)
+
+
 
 FetchContent_Declare(
     nlohmann_json
@@ -57,3 +60,5 @@ add_subdirectory(config)
 add_subdirectory(lib)
 add_subdirectory(app)
 add_subdirectory(tests)
+
+target_compile_definitions(${LIBRARY_NAME} PUBLIC PRINTER_ACTIVE)

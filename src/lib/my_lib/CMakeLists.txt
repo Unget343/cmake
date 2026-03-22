@@ -17,3 +17,5 @@ target_link_libraries(${LIBRARY_NAME} PUBLIC
     fmt::fmt
     spdlog::spdlog
     cxxopts::cxxopts)
+target_include_directories(${LIBRARY_NAME} PUBLIC
+    "${LIBRARY_INCLUDES}")
