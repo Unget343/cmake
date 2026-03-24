@@ -5,6 +5,15 @@
 default_target: all
 .PHONY : default_target
 
+conan_d:
+	rm -rf build
+	mkdir build
+	cd build && conan install .. -s build_type=Debug -s compiler.cppstd=17 --output-folder=. --build=missing
+
+conan_d:
+	rm -rf build
+	mkdir build
+	cd build && conan install .. -s build_type=Release -s compiler.cppstd=17 --output-folder=. --build=missing
 # Allow only one "make -f Makefile2" at a time, but pass parallelism.
 .NOTPARALLEL:
 

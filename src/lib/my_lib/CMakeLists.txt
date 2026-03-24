@@ -19,3 +19,7 @@ target_link_libraries(${LIBRARY_NAME} PUBLIC
     cxxopts::cxxopts)
 target_include_directories(${LIBRARY_NAME} PUBLIC
     "${LIBRARY_INCLUDES}")
+
+if(${ENABLE_LTO})
+    target_enable_lto(${LIBRARY_NAME} ${ENABLE_LTO})
+endif()

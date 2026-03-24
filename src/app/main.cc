@@ -8,6 +8,9 @@ using namespace std;
 
 int main()
 {
+    int x[2];
+    x[2] = 1331;
+
     cout << project_name << endl;
     cout << project_version << endl;
 
