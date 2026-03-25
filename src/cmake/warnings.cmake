@@ -1,4 +1,4 @@
-function(target_set_warnings targget enable as_errors)
+function(target_set_warnings TARGET enable as_errors)
     if (NOT ${ENABLED})
         message(STATUS "Warnings disabled for: ${target}")
         return()
