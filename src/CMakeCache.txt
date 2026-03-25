@@ -289,6 +289,21 @@ CppProjectTemplate_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 CppProjectTemplate_SOURCE_DIR:STATIC=/workspaces/thread-1/src
 
+//Enable AddressSanitizer
+ENABLE_ADDRESS_SANITIZE:BOOL=ON
+
+//ENABLE ...
+ENABLE_LTO:BOOL=ON
+
+//Enable a unit testing build
+ENABLE_TESTING:BOOL=OFF
+
+//Enable undefined sanitixer
+ENABLE_UNDEFINED_SANITIZER:BOOL=ON
+
+//Enable compiler warnings
+ENABLE_WARNINGS:BOOL=ON
+
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/workspaces/thread-1/src/_deps
 
@@ -488,8 +503,26 @@ SPDLOG_WCHAR_FILENAMES:BOOL=OFF
 //non supported option
 SPDLOG_WCHAR_SUPPORT:BOOL=OFF
 
+//Enable to use Conan
+USE_CONAN:BOOL=ON
+
+//Whether to use CPM
+USE_CPM:BOOL=OFF
+
+//Treat warnings as errors
+WARNINGS_AS_ERRORS:BOOL=ON
+
+//The directory containing a CMake configuration file for cxxopts.
+cxxopts_DIR:PATH=cxxopts_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for fmt.
+fmt_DIR:PATH=/opt/conda/lib/cmake/fmt
+
 //Value Computed by CMake
 nlohmann_json_BINARY_DIR:STATIC=/workspaces/thread-1/src/external/json
+
+//The directory containing a CMake configuration file for nlohmann_json.
+nlohmann_json_DIR:PATH=/opt/conda/share/cmake/nlohmann_json
 
 //Value Computed by CMake
 nlohmann_json_IS_TOP_LEVEL:STATIC=OFF
@@ -499,6 +532,9 @@ nlohmann_json_SOURCE_DIR:STATIC=/workspaces/thread-1/src/external/json
 
 //Value Computed by CMake
 spdlog_BINARY_DIR:STATIC=/workspaces/thread-1/src/_deps/spdlog-build
+
+//The directory containing a CMake configuration file for spdlog.
+spdlog_DIR:PATH=/opt/conda/lib/cmake/spdlog
 
 //Value Computed by CMake
 spdlog_IS_TOP_LEVEL:STATIC=OFF
@@ -692,6 +728,8 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding nlohmann_json
+FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[/opt/conda/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake][v3.11.2()]
 //Test FMT_HAS_VARIANT
 FMT_HAS_VARIANT:INTERNAL=1
 //ADVANCED property for variable: GIT_EXECUTABLE

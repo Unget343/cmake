@@ -17,8 +17,11 @@ option(ENABLE_TESTING "Enable a unit testing build" OFF)
 option(ENABLE_WARNINGS "Enable compiler warnings" ON)
 option(WARNINGS_AS_ERRORS "Treat warnings as errors" ON)
 
-option(ENABLE_ADDRESS_SANITIZE "Enable AddressSanitizer" ON
+option(ENABLE_ADDRESS_SANITIZE "Enable AddressSanitizer" ON)
 option(ENABLE_UNDEFINED_SANITIZER "Enable undefined sanitixer" ON)
+
+option(ENABLE_CLANG_TIDY "Enable clang-tidy" ON)
+option(ENABLE_COVERAGE "Enable code coverage" ON)
 
 option(ENABLE_LTO "ENABLE ..." ON)
 
@@ -27,11 +30,11 @@ include(AddGitSubmodule)
 include(FetchContent)
 
 if(ENABLE_WARNINGS)
-    include(Warnings)
+    include(warnings)
 endif()
 
 if(ENABLE_ADDRESS_SANITIZE OR ENABLE_UNDEFINED_SANITIZER)
-    include(Sanitizer)
+    include(sanitizer)
     add_sanitizer_flags()
 endif()
 

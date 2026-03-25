@@ -29,7 +29,7 @@ function(add_sanitizer_flags)
         if(${ENABLE_UNDEFINED_SANITIZER})
          message(STATUS "undefined sanitizer not implemented for MSVC")
         endif()
-    else
+    else()
         message(ERROR "Compiler not supported")
     endif()
 
